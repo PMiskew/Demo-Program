@@ -1,5 +1,5 @@
 
-public class Warlock extends Player{
+public class Warlock extends Player implements MagicUser{
 
 	private int mana;
 	
@@ -23,6 +23,11 @@ public class Warlock extends Player{
 		
 		System.out.println("Casting Spell");
 
+	}
+	
+	public void rideDragon() {
+		System.out.println("Riding Dragon");
+				
 	}
 	
 }
