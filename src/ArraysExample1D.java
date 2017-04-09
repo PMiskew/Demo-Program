@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class ArraysExample1D {
 
@@ -26,7 +27,7 @@ public class ArraysExample1D {
 		boolean[] booleanArray2 = {true,true,false,true}; //creates an array of booleans. Length = 4, indexes 0 - 3
 		
 		
-		//Initialize Array or examples:
+		//Initialize array for code examples:
 		int[] array = {1,4,6,5,7,8,9,5};
 		
 		//Access Element:
@@ -62,6 +63,58 @@ public class ArraysExample1D {
 		for (int element: array) {
 			System.out.println(element);
 		}
+		
+		//Initialize array for method example:
+		String[] words = {"fish","food","is","good"};
+		
+		String[] wordsReverse = reverseArray(words); //Since reverseArray returns an array of strings this is okay. 
+		
+		for (int i = 0; i < wordsReverse.length; i++) {
+			System.out.println(wordsReverse[i]);
+		
+		}
+		
+		/*
+		 * Arrays Class:
+		 * 
+		 * There is a built in class called Arrays that includes a wide variety of useful methods. Below are some examples 
+		 * 
+		 */
+		double[] heights = {11.7,9.9,9.9,10.2};
+		
+		//toString:  This method will return the Array as a nice string for outputting.  Good for quick testing. 
+		System.out.println(Arrays.toString(heights));
+		
+		//sort:	This method returns a sorted version of the array.  It is overloaded meaning there is a version for each data type.
+		//		This is a great example of when an array being a reference variable is useful.  Since heights is a reference variable, 
+		//		we don't have to return a value for the changes to take effect. 
+		Arrays.sort(heights);
+		System.out.println(Arrays.toString(heights));
+		
+		
+	}
+	
+	
+	/*
+	 * Method example:  This method takes an array of integers and creates a new array with the elements in reverse.  It
+	 * returns a new array. 
+	 */
+	public static String[] reverseArray(String[] array) {
+		
+		String[] newArray = new String[array.length]; //new array to store values in reverse
+		int ctr = 0; //counts through new array
+		for (int i = array.length - 1; i >= 0; i--) {
+			
+			newArray[ctr] = array[i];
+			
+			ctr = ctr + 1;
+			
+		}
+		
+		return newArray;
+		
+		
+		
 		
 	}
 
