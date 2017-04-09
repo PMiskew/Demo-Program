@@ -1,3 +1,4 @@
+package hierarchy_demo;
 /*
  * Since Warrior extends player we can say
  * 

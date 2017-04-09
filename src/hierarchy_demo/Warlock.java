@@ -1,4 +1,4 @@
-
+package hierarchy_demo;
 public class Warlock extends Player implements MagicUser{
 
 	private int mana;
