@@ -1,8 +1,25 @@
 package class_demo;
 
+/**
+ * This is the class header.  
+ * - The name of the class MUST match the name of the file. 
+ * - It is good habit to CAPITALIZE the name of the class. 
+ * 
+ * @author pmisk
+ *
+ */
 public class Fraction {
 
-	private int num;
+	//ENCAPSULATION:	- This is when the programmer restricts who can access and modify variables. Always encapsulate.
+	//					- By default all fields and methods are public.
+	//					- To encapsulate make the field modifiers private. 
+	//					- To access the fields use an accessor method. 
+	//					- To modify the fields use an mutator method.
+	//			AP TIP	- They are looking to see that students understand encapsulation.  Marks are allocated
+	//					  for writing the word private.  MAKE ALL FIELDS PRIVATE. 
+	//		Extension:	- There is another modifier in between public and private called protected.  This is not used
+	//					  on the AP exam, but is useful in larger programming projects. 
+	private int num; 
 	private int den;
 	
 	public Fraction(int n, int d) {
